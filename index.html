@@ -211,17 +211,21 @@
 		<tr>
 			<td align="justify">
 				<font size="5">
-				The video object segmentation (VOS) task is to segment an object over time given a single segmentation mask.
-				Current state-of-the-art approaches use a memory of already processed frames and estimate the segmentation
-				masks of follow-up frames through matching. Lacking any adaptation mechanism, such methods are prone to
-				test-time distribution shifts. We focus on matching-based VOS under distribution shifts such as video
-				corruptions, stylization, and sim-to-real transfer. We explore task-agnostic and VOS-specific test-time
-				training strategies, including a MCC-based variant tailored for matching-based VOS methods.
-				Experiments on the most common benchmarks show that the proposed test-time training leads to significant
-				performance gains for sim-to-real transfer and, despite using only a single test video, recovers the
-				bulk of the gain that training on real videos brings. We further present DAVIS-C, a variant of the
-				popular DAVIS test set with extreme distribution shifts like image-video-level corruptions and
-				stylizations, and show that test-time training significantly boosts performance also in this case.
+					The video object segmentation (VOS) task involves the segmentation of an object over time based on a
+					single initial mask. Current state-of-the-art approaches use a memory of previously processed frames
+					and rely on matching to estimate segmentation masks of subsequent frames. Lacking any adaptation
+					mechanism, such methods are prone to test-time distribution shifts.
+					This work focuses on matching-based VOS under distribution shifts such as video corruptions,
+					stylization, and sim-to-real transfer. We explore test-time training strategies that are agnostic
+					to the specific task as well as strategies that are designed specifically for VOS. This includes a
+					variant based on MCC tailored to matching-based VOS methods.
+					The experimental results on common benchmarks demonstrate that the proposed test-time training
+					yields significant improvements in performance. In particular for the sim-to-real scenario and
+					despite using only a single test video, our approach manages to recover a substantial portion of
+					the performance gain achieved through training on real videos. Additionally, we introduce DAVIS-C,
+					an augmented version of the popular DAVIS test set, featuring extreme distribution shifts like
+					image-video-level corruptions and stylizations. Our results illustrate that test-time training
+					enhances performance even in these challenging cases.
 			</td>
 		</tr>
 	</table>
