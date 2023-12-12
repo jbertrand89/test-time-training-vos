@@ -114,6 +114,58 @@
 		height: 1px;
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
+    /* Style for button-like links */
+    .button-link {
+        display: inline-block;
+		box-sizing: border-box;
+        padding: 10px 20px;
+        /*background-color: rgb(74, 74, 74);*/
+        /*color: white;*/
+		/*color: rgb(255, 255, 255);*/
+		color: #fff !important; /* Set text color to white */
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+		background-color: rgb(54, 54, 54);
+		border-bottom-color: rgba(0, 0, 0, 0);
+		border-bottom-left-radius: 290486px;
+		border-bottom-right-radius: 290486px;
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-image-outset: 0;
+		border-image-repeat: stretch;
+		border-image-slice: 100%;
+		border-image-source: none;
+		border-image-width: 1;
+		border-left-color: rgba(0, 0, 0, 0);
+		border-left-style: solid;
+		border-left-width: 1px;
+		border-right-color: rgba(0, 0, 0, 0);
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-top-color: rgba(0, 0, 0, 0);
+		border-top-left-radius: 290486px;
+		border-top-right-radius: 290486px;
+		border-top-style: solid;
+		border-top-width: 1px;
+		box-shadow: none;
+/*box-sizing*/
+
+		/*box-sizing: border-box;*/
+		/*color: rgb(74, 74, 74);*/
+		/*font-family: "Noto Sans", sans-serif;*/
+		/*font-size: 16px;*/
+		/*font-style: normal;*/
+		/*font-weight: 400;*/
+		/*line-height: 24px;*/
+		/*text-align: center;*/
+		/*text-rendering: optimizelegibility*/
+    }
+
+    /*.button-link:hover {*/
+    /*    background-color: #208799;*/
+    /*}*/
 </style>
 
 <html>
@@ -168,25 +220,45 @@
 			<table align=center width=500px>
 				<tr>
 					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='https://openreview.net/pdf?id=9QsdPQlWiE'>[Paper]</a></span>
-						</center>
-					</td>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='https://github.com/ttt-matching-based-vos/ttt_matching_vos'>[GitHub]</a></span><br>
-						</center>
-					</td>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='http://ptak.felk.cvut.cz/personal/toliageo/share/davisc/davisc.tar.gz'>[Dataset]</a></span><br>
-						</center>
-					</td>
-					<td align=center width=120px>
-						<center>
-							<span style="font-size:24px"><a href='http://ptak.felk.cvut.cz/personal/toliageo/share/tttvos/ttmcc_stcn_examples/'>[Examples]</a></span><br>
-						</center>
-					</td>
+					<center>
+						<a class="button-link" href='https://openreview.net/pdf?id=9QsdPQlWiE'>Paper</a>
+					</center>
+				</td>
+				<td align=center width=120px>
+					<center>
+						<a class="button-link" href='https://github.com/ttt-matching-based-vos/ttt_matching_vos'>GitHub</a>
+					</center>
+				</td>
+				<td align=center width=120px>
+					<center>
+						<a class="button-link" href='http://ptak.felk.cvut.cz/personal/toliageo/share/davisc/davisc.tar.gz'>Dataset</a>
+					</center>
+				</td>
+				<td align=center width=120px>
+					<center>
+						<a class="button-link" href='http://ptak.felk.cvut.cz/personal/toliageo/share/tttvos/ttmcc_stcn_examples/'>Examples</a>
+					</center>
+				</td>
+<!--					<td align=center width=120px>-->
+<!--						<center>-->
+<!--							<span style="font-size:24px"><a href='https://openreview.net/pdf?id=9QsdPQlWiE'>[Paper]</a></span>-->
+<!--						</center>-->
+<!--					</td>-->
+<!--					<td align=center width=120px>-->
+<!--						<center>-->
+<!--							<span style="font-size:24px"><a href='https://github.com/ttt-matching-based-vos/ttt_matching_vos'>[GitHub]</a></span><br>-->
+<!--						</center>-->
+<!--					</td>-->
+<!--					<td align=center width=120px>-->
+<!--						<center>-->
+<!--							<span style="font-size:24px"><a href='http://ptak.felk.cvut.cz/personal/toliageo/share/davisc/davisc.tar.gz'>[Dataset]</a></span><br>-->
+<!--						</center>-->
+<!--					</td>-->
+<!--					<td align=center width=120px>-->
+<!--						<center>-->
+<!--							<span style="font-size:24px"><a href='http://ptak.felk.cvut.cz/personal/toliageo/share/tttvos/ttmcc_stcn_examples/'>[Examples]</a></span><br>-->
+<!--						</center>-->
+<!--					</td>-->
 					
 <!--					<td align=center width=120px>-->
 <!--						<center>-->
@@ -200,6 +272,10 @@
 
 	<center>
 		<table align=center width=1200px>
+			<!-- Add some vertical space -->
+			<tr>
+				<td colspan="4" style="height: 50px;"></td>
+			</tr>
 			<tr>
 				<td width=400px>
                 <center>
